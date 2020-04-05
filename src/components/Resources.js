@@ -9,6 +9,7 @@ class Resources extends Component {
   constructor() {
     super();
     this.state = {
+      res: "",
       data: [
         {
           title: "My morning Routing",
@@ -31,15 +32,29 @@ class Resources extends Component {
   }
 
   componentDidMount() {
-    console.log("resources", this.state.data);
     window.scrollTo(0, 0);
-    // let id = this.props.match.params.id;
-    // let url = `https://cnycserver.herokuapp.com/items/${id}`;
-    // this.props.getDeal(url, this.props.history);
+
+    let url = `https://riseshineserver.herokuapp.com/post`;
+
+    fetch(url)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log("data", data);
+        this.setState({ res: data });
+      })
+      .catch((err) => {
+        console.log(
+          "There was a problem with your fetch request" + err.message
+        );
+      });
   }
 
   render() {
+    console.log("state", this.state);
     const resources = this.state.data;
+    const res = this.state.res;
 
     const filterbutton = (
       <div className="filterbutton">
@@ -164,8 +179,9 @@ class Resources extends Component {
         <hr />
 
         {/* resources INFO FROM API */}
-        {resources ? (
-          resources.map((resources, key) => {
+
+        {res ? (
+          res.data.map((resources, key) => {
             return (
               <div key={key}>
                 <div className="row justify-content-center">
@@ -187,7 +203,7 @@ class Resources extends Component {
                       <small>
                         <span class="btn-group">
                           <a
-                            href={resources.url}
+                            href={resources.resource_url}
                             target="_blank"
                             className="btn btn-outline-success btn-sm"
                           >
@@ -196,15 +212,9 @@ class Resources extends Component {
                         </span>
                       </small>
                     </h1>
-                    <div className="author-div">
-                      <p className="date">{resources.title}</p>
-                      <Link to={`/`} className="author-name">
-                        Details
-                      </Link>
-                    </div>
 
                     <div className="comment">
-                      <p>{resources.description}</p>
+                      <p>{resources.text}</p>
                     </div>
 
                     <div className="helpful flex-container">

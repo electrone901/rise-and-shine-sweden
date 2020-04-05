@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { useHistory } from "react-router-dom";
 
 class AddResource extends Component {
   constructor() {
@@ -7,6 +8,8 @@ class AddResource extends Component {
       title: "",
       URL: "",
       description: "",
+      category: "",
+      type: "",
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -37,20 +40,34 @@ class AddResource extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  onSubmit(e) {
-    console.log("yay", this.state);
+  async onSubmit(e) {
     e.preventDefault();
+    // const history = useHistory();
+    console.log("yay", this.state);
 
-    // const reviewData = {
-    //   name: this.state.author,
-    //   rating: this.state.rating,
-    //   text: this.state.description,
-    // };
-    // this.props.postReview(
-    //   reviewData,
-    //   this.props.match.params.id,
-    //   this.props.history
-    // );
+    try {
+      // Create request to api service
+      const req = await fetch(`https://riseshineserver.herokuapp.com/post`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+
+        // format the data
+
+        body: JSON.stringify({
+          title: this.state.title,
+          resource_url: this.state.URL,
+          text: this.state.description,
+          category: this.state.category,
+          type: this.state.type,
+          image_url: this.state.imageName,
+        }),
+      });
+
+      const res = await req.json();
+      this.props.history.push("/");
+    } catch (err) {
+      console.error(`ERROR: err`);
+    }
   }
 
   render() {
