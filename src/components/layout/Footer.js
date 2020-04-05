@@ -6,12 +6,7 @@ const Footer = () => {
       <div class="container">
         <div class="row ">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-            <div class="ft-logo">
-              <img
-                src="https://easetemplate.com/free-website-templates/cointrade/images/logo.png"
-                alt=""
-              />
-            </div>
+            
           </div>
         </div>
         <hr class="footer-line" />
