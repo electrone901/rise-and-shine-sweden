@@ -9,7 +9,7 @@ export default class Vidoes extends Component{
     componentWillMount(){
         axios.get('https://riseshineserver.herokuapp.com/post')
             .then(res => {
-                return this.setState({data: res.data});
+                return this.setState({data: res.data.data});
             })
             .catch(error => {
                 console.log(error);
