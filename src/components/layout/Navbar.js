@@ -1,13 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import styles from "./Footer.module.css";
 import logo from "../img/banner.png";
+
+
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">
+      <Link className="navbar-brand" to="/">
         <img src={logo} alt="logo" className="img-fluid logo" />
-      </a>
+      </Link>
 
       <button
         className="navbar-toggler"
@@ -23,33 +27,33 @@ const Navbar = () => {
       <div className="collapse navbar-collapse text-right" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/stories">
+            <Link className="nav-link" to="/stories">
               Stories
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/stories">
+            <Link className="nav-link" to="/stories">
               Guide lines
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/resources">
+            <Link className="nav-link" to="/resources">
               Resources
-            </a>
+            </Link>
           </li>
           <li
             className="nav-item"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
           >
-            <a className="btn btn-primary" href="/addResource">
+            <Link className="btn btn-primary" to="/addResource">
               Post resources
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
