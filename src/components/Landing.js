@@ -8,6 +8,7 @@ const Landing = () => {
         <a className="nav-link" href="/stories">
           Facebook news feed
         </a>
+        
       </h1>
     </>
   );
