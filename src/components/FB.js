@@ -37,7 +37,7 @@ export default class FB extends Component{
 
                     {data.map(video => {
                         return (
-                            <div className="col-6 col-md-4 my-2" key={video.id}>
+                            <div className="col-12 col-md-6 col-lg-6 col-xl-4 my-3" key={video.id}>
                                 <div
                                     class="fb-video bg-primary"
                                     data-href={"https://www.facebook.com/facebook/videos/" + video.fb_id}
