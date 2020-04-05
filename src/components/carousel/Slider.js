@@ -7,7 +7,7 @@ import Slide from "./Slide";
 import RightArrow from "./RightArrow";
 import LeftArrow from "./LeftArrow";
 import TextSlider from "./TextSlider";
-import test from "../../images/b1.jpg";
+//import test from "../../images/b1.jpg";
 
 export default class Slider extends Component {
   constructor(props) {
