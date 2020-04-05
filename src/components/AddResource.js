@@ -64,7 +64,7 @@ class AddResource extends Component {
       });
 
       const res = await req.json();
-      this.props.history.push("/");
+      this.props.history.push("/resources");
     } catch (err) {
       console.error(`ERROR: err`);
     }
