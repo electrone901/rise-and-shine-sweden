@@ -285,7 +285,7 @@ Description     : A file that contains all styles for Carousel.js.
 .textSliderTitle {
     font-weight: 600;
     /* color: white; */
-    color: #0aaae9;
+    color: black;
 }
 
 .tParent__items__sign {
@@ -309,7 +309,6 @@ Description     : A file that contains all styles for Carousel.js.
     margin-top: 14px;
     cursor: pointer;
 }
-
 
 /* LOGO  */
 
