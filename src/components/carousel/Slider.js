@@ -14,15 +14,15 @@ export default class Slider extends Component {
     super(props);
     this.state = {
       images: [
-        "images/under_1.jpg",
-        "images/under_1.jpg",
-        "images/b4.jpg",
-        "images/over_50.jpg",
-        "images/under_15.jpg",
-        "images/under_20.jpg",
-        "images/b1.jpg",
-        "images/b3.jpg",
-        "images/b6.jpg",
+        "images/_1.png",
+        "images/_4.jpg",
+        "images/_01.gif",
+        "images/_9.gif",
+        "images/000.gif",
+        "images/_3.jpg",
+        "images/_4.jpg",
+        "images/_6.png",
+        "images/_2.jpg",
       ],
       currentIndex: 0,
       translateValue: 0,
@@ -34,7 +34,7 @@ export default class Slider extends Component {
     if (this.state.autoplay) {
       const interval = window.setInterval(() => {
         this.goToNextSlide();
-      }, 3000);
+      }, 4000);
       this.setState({ interval });
     }
   };
