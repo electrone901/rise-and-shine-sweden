@@ -1,9 +1,10 @@
 import React from 'react';
+import Videos from "./Videos";
 
 const Stories = () => {
     return(
         <>
-            <h1>Stories</h1>
+            <Videos />
         </>
     );
 };
