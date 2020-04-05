@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import logo from "../img/banner.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/">
-        rise-and-shine-sweden
+        <img src={logo} alt="logo" className="img-fluid logo" />
       </a>
+
       <button
         className="navbar-toggler"
         type="button"
@@ -18,7 +20,7 @@ const Navbar = () => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div className="collapse navbar-collapse text-right" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="nav-link" href="/">
@@ -33,6 +35,20 @@ const Navbar = () => {
           <li className="nav-item">
             <a className="nav-link" href="/stories">
               Guide lines
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/resources">
+              Resources
+            </a>
+          </li>
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a className="btn btn-primary" href="/addResource">
+              Post resources
             </a>
           </li>
         </ul>

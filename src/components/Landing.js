@@ -1,11 +1,12 @@
 import React from "react";
-
+import Slider from "./carousel/Slider";
 const Landing = () => {
   return (
     <>
+      <Slider />
       <h1>
         <a className="nav-link" href="/stories">
-          Guide lines
+          Facebook news feed
         </a>
       </h1>
     </>
