@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./Footer.module.css";
+
+import Banner from '../img/banner.png';
+
 const Footer = () => {
   return (
     <div className="footer">
       <div class="container">
         <div class="row ">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-            
+            <img src={Banner} class="footer__banner" /> 
           </div>
         </div>
         <hr class="footer-line" />

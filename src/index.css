@@ -348,3 +348,7 @@ Description     : A file that contains all styles for Carousel.js.
             color: #686F7A;
             font-size: 15px;
         }
+
+.footer__banner{
+    width: 20rem;
+}

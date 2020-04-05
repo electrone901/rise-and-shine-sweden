@@ -22,7 +22,11 @@ export default class Vidoes extends Component{
         console.log(this.state.data)
         this.state.data.forEach(post => {
             posts.push(
-                <p>post.id</p>
+                <div>
+                    <p>{post.id}</p>
+                    <p>{post.id}</p>    
+                </div>
+                
             )
         });
 
@@ -33,8 +37,8 @@ export default class Vidoes extends Component{
         
         return(
             <div className="container">
-                <h1>Vidoes</h1>
-                {this.listOfPost()}
+                <h1>Videos</h1>
+                <p>Coming Soon!</p>
             </div>
         );
     };
