@@ -22,7 +22,7 @@ class TextSlider extends Component {
             <h1 className="textSliderTitle bd-highlight">Discover events for all the</h1>
             <h2 className="textSliderTitle bd-highlight">things you love </h2>
             <p className="tParent__items__subTittle text-dark">We do more together</p>
-            <a href="https://www.facebook.com/riseandshinesweden/" target="blank" className="btn btn-lg btn-primary">
+            <a href="https://www.facebook.com/riseandshinesweden/" target="blank" className="btn btn-lg bg-warning">
               Join now
             </a>
           </div>

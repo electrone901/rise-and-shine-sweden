@@ -7,7 +7,7 @@ import logo from "../img/banner.png";
 const Navbar = () => {
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-color">
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" className="img-fluid logo" />
@@ -19,27 +19,27 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link text-light" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/stories">
+              <Link className="nav-link text-light" to="/stories">
                 Stories
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/stories">
+              <Link className="nav-link text-light" to="/stories">
                 Guide lines
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/resources">
+              <Link className="nav-link text-light" to="/resources">
                 Resources
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="btn btn-primary" to="/addResource">
+              <Link className="btn bg-warning" to="/addResource">
                 Post resources
               </Link>
             </li>
