@@ -4,7 +4,6 @@ Description     : is the left arrow of our carousel  using font-awesome
 ******************************************************************************/
 
 import React, { Component } from "react";
-import { Link, withRouter } from "react-router-dom";
 
 class TextSlider extends Component {
   constructor() {

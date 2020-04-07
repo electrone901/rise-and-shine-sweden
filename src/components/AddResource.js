@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { useHistory } from "react-router-dom";
 
 class AddResource extends Component {
   constructor() {
@@ -47,7 +46,7 @@ class AddResource extends Component {
 
     try {
       // Create request to api service
-      const req = await fetch(`https://riseshineserver.herokuapp.com/post`, {
+      await fetch(`https://riseshineserver.herokuapp.com/post`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
 
@@ -63,7 +62,7 @@ class AddResource extends Component {
         }),
       });
 
-      const res = await req.json();
+      //const res = await req.json();
       this.props.history.push("/resources");
     } catch (err) {
       console.error(`ERROR: err`);
@@ -71,7 +70,7 @@ class AddResource extends Component {
   }
 
   render() {
-    const { errors } = this.state;
+    //const { errors } = this.state;
     return (
       <div className="container">
         <div className="row">

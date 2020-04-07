@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import qsearch from "./img/qsearch1.png";
 import image2 from "../components/img/b2.jpg";
 
 import Spinner from "./common/Spinner";
@@ -53,7 +52,6 @@ class Resources extends Component {
 
   render() {
     console.log("state", this.state);
-    const resources = this.state.data;
     const res = this.state.res;
 
     const filterbutton = (
@@ -121,27 +119,27 @@ class Resources extends Component {
       </div>
     );
 
-    const searchBar = (
-      <div className="input-group my-3">
-        <input
-          type="text"
-          name="dealName"
-          className="form-control"
-          //   value={this.state.dealName}
-          placeholder="Search Deal by Name"
-          //   onChange={this.onChange}
-        />
-        <div className="input-group-append">
-          <button
-            className="btn btn-outline-secondary"
-            type="button"
-            // onClick={this.searchDealByName.bind(this)}
-          >
-            Search
-          </button>
-        </div>
-      </div>
-    );
+    // const searchBar = (
+    //   <div className="input-group my-3">
+    //     <input
+    //       type="text"
+    //       name="dealName"
+    //       className="form-control"
+    //       //   value={this.state.dealName}
+    //       placeholder="Search Deal by Name"
+    //       //   onChange={this.onChange}
+    //     />
+    //     <div className="input-group-append">
+    //       <button
+    //         className="btn btn-outline-secondary"
+    //         type="button"
+    //         // onClick={this.searchDealByName.bind(this)}
+    //       >
+    //         Search
+    //       </button>
+    //     </div>
+    //   </div>
+    // );
 
     return (
       <div className="container">
@@ -155,7 +153,7 @@ class Resources extends Component {
             }
             onClick={() => this.setState({ filerMode: "category" })}
           >
-            ✨Explore by Category
+            <span role="img" aria-label="star">✨</span>Explore by Category
           </h2>
           <h2
             className={
@@ -206,6 +204,7 @@ class Resources extends Component {
                             href={resources.resource_url}
                             target="_blank"
                             className="btn btn-outline-success btn-sm"
+                            rel="noopener noreferrer"
                           >
                             Open
                           </a>

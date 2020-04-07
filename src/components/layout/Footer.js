@@ -1,81 +1,80 @@
 import React from "react";
-import styles from "./Footer.module.css";
 
 import Banner from '../img/banner.png';
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div class="container">
-        <div class="row ">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-            <img src={Banner} class="footer__banner" /> 
+      <div className="container">
+        <div className="row ">
+          <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+            <img src={Banner} className="footer__banner" alt="Banner" /> 
           </div>
         </div>
-        <hr class="footer-line" />
-        <div class="row ">
-          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-            <div class="footer-widget ">
-              <div class="footer-title">Company</div>
-              <ul class="list-unstyled">
+        <hr className="footer-line" />
+        <div className="row ">
+          <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+            <div className="footer-widget ">
+              <div className="footer-title">Company</div>
+              <ul className="list-unstyled">
                 <li>
-                  <a href="#">About</a>
+                  <a href="/">About</a>
                 </li>
                 <li>
-                  <a href="#">Support</a>
+                  <a href="/">Support</a>
                 </li>
                 <li>
-                  <a href="#">Press</a>
+                  <a href="/">Press</a>
                 </li>
                 <li>
-                  <a href="#">Legal & Privacy</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-            <div class="footer-widget ">
-              <div class="footer-title">Quick Links</div>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#">News</a>
-                </li>
-                <li>
-                  <a href="#">Contact us</a>
-                </li>
-                <li>
-                  <a href="#">FAQ</a>
+                  <a href="/">Legal & Privacy</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-            <div class="footer-widget ">
-              <div class="footer-title">Social</div>
-              <ul class="list-unstyled">
+          <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+            <div className="footer-widget ">
+              <div className="footer-title">Quick Links</div>
+              <ul className="list-unstyled">
                 <li>
-                  <a href="#">Twitter</a>
+                  <a href="/">News</a>
                 </li>
                 <li>
-                  <a href="#">Google +</a>
+                  <a href="/">Contact us</a>
                 </li>
                 <li>
-                  <a href="#">Linked In</a>
-                </li>
-                <li>
-                  <a href="#">Facebook</a>
+                  <a href="/">FAQ</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
-            <div class="footer-widget ">
-              <h3 class="footer-title">Subscribe Newsletter</h3>
+          <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+            <div className="footer-widget ">
+              <div className="footer-title">Social</div>
+              <ul className="list-unstyled">
+                <li>
+                  <a href="/">Twitter</a>
+                </li>
+                <li>
+                  <a href="/">Google +</a>
+                </li>
+                <li>
+                  <a href="/">Linked In</a>
+                </li>
+                <li>
+                  <a href="/">Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
+            <div className="footer-widget ">
+              <h3 className="footer-title">Subscribe Newsletter</h3>
               <form>
-                <div class="newsletter-form">
+                <div className="newsletter-form">
                   <input
                     className="form-control"
                     placeholder="Enter Your Email address"
@@ -89,15 +88,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="row ">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
-            <div class="tiny-footer">
+        <div className="row ">
+          <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
+            <div className="tiny-footer">
               <p>
                 Copyright © All Rights Reserved 2020 to{" "}
                 <a
                   href="https://www.facebook.com/riseandshinesweden/"
                   target="_blank"
-                  class="copyrightlink"
+                  className="copyrightlink"
+                  rel="noopener noreferrer"
                 >
                   Rise and Shine Sweden.
                 </a>
