@@ -152,9 +152,9 @@ hr {
 /* FOOTER  */
 
 .footer {
-    background-color: #08202e;
+    background-color: #4BABEA;
     padding-top: 80px;
-    color: #636e74;
+    color: #131414;
     font-weight: 400;
     font-size: 17px;
 }
@@ -177,7 +177,7 @@ hr {
 .footer-widget ul li a {
     text-transform: capitalize;
     font-size: 17px;
-    color: #636e74;
+    color: #292b2c;
     display: block;
     font-weight: 600;
 }
@@ -191,20 +191,11 @@ hr {
 }
 
 .newsletter-form .form-control {
-    background-color: #1e2e38;
     border-color: #1e2e38;
 }
 
 .newsletter-form .form-control:focus {
     color: black;
-}
-
-.newsletter-form input::-webkit-input-placeholder {
-    color: #fff !important;
-}
-
-.newsletter-form input:focus::-webkit-input-placeholder {
-    color: #fff !important;
 }
 
 .tiny-footer {
@@ -213,7 +204,7 @@ hr {
     font-weight: 600;
     background-color: transparent;
     border-top: 1px solid #152e3d;
-    color: #888d90;
+    color: #292b2c;
     line-height: 1;
 }
 
