@@ -268,9 +268,11 @@ Description     : A file that contains all styles for Carousel.js.
 
 .tParent {
     position: absolute;
-    width: 100%;
+    left: 50%;
     top: 30%;
-    color: #fff;
+    transform: translate(-50%, -20%);
+    background-color:rgba(224, 221, 221, .85);
+    padding: 1rem;
 }
 
 .textSliderTitle {
