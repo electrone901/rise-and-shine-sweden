@@ -36,9 +36,9 @@ export default class Vidoes extends Component{
     render(){
         
         return(
-            <div className="container">
-                <h1>Videos</h1>
-                <p>Coming Soon!</p>
+            <div className="container min-height">
+                <h1 className="text-center mt-4 mb-5">Videos</h1>
+                <p className="mb-5">Coming Soon!</p>
             </div>
         );
     };

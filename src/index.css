@@ -345,3 +345,7 @@ Description     : A file that contains all styles for Carousel.js.
 .bg-color{
     background-color: #4BABEA;
 }
+
+.min-height{
+    min-height: 70vh;
+}
